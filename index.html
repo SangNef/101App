@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <div class="box">
+                <h2>Sang</h2>
+
+                <input type="number" id="s-all" placeholder="Sang Chung" oninput="updateOutput()">
+                <input type="number" id="s-hu" placeholder="Sang Hùng" oninput="updateOutput()">
+                <input type="number" id="s-ha" placeholder="Sang Hà" oninput="updateOutput()">
+            </div>
+
+            <div class="box">
+                <h2>Hùng</h2>
+
+                <input type="number" id="hu-all" placeholder="Hùng Chung" oninput="updateOutput()">
+                <input type="number" id="hu-s" placeholder="Hùng Sang" oninput="updateOutput()">
+                <input type="number" id="hu-ha" placeholder="Hùng Hà" oninput="updateOutput()">
+            </div>
+
+            <div class="box">
+                <h2>Hà</h2>
+
+                <input type="number" id="ha-all" placeholder="Hà Chung" oninput="updateOutput()">
+                <input type="number" id="ha-s" placeholder="Hà Sang" oninput="updateOutput()">
+                <input type="number" id="ha-hu" placeholder="Hà Hùng" oninput="updateOutput()">
+            </div>
+        </div>
+
+        <div class="result">
+            <h2>Tổng: <span id="result-all"></span></h2>
+            <div class="output">
+                <div class="output-row">
+                    <h3>Trung Bình</h3>
+                    <p>Sang còn: <span id="s-remain"></span></p>
+                    <p>Hùng còn: <span id="hu-remain"></span></p>
+                    <p>Hà còn: <span id="ha-remain"></span></p>
+                </div>
+                <div class="output-row">
+                    <h3>Riêng</h3>
+                    <p id="shu"></p>
+                    <p id="sha"></p>
+                    <p id="huha"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
