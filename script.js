@@ -25,9 +25,9 @@ function updateOutput() {
   var resultElement = document.getElementById("shu");
 
   if (difference >= 0) {
-    resultElement.textContent = "Hùng trả Sang: " + difference;
+    resultElement.textContent = "Hùng trả Sang: " + difference/2;
   } else {
-    resultElement.textContent = "Sang trả Hùng: " + Math.abs(difference);
+    resultElement.textContent = "Sang trả Hùng: " + Math.abs(difference/2);
   }
 
   //   riêng Hà Sang
@@ -39,9 +39,9 @@ function updateOutput() {
   var shaResultElement = document.getElementById("sha");
 
   if (differenceSHa >= 0) {
-    shaResultElement.textContent = "Hà trả Sang: " + differenceSHa;
+    shaResultElement.textContent = "Hà trả Sang: " + differenceSHa/2;
   } else {
-    shaResultElement.textContent = "Sang trả Hà: " + Math.abs(differenceSHa);
+    shaResultElement.textContent = "Sang trả Hà: " + Math.abs(differenceSHa/2);
   }
 
   //   riêng Hà Hùng
@@ -53,8 +53,9 @@ function updateOutput() {
   var huhaResultElement = document.getElementById("huha");
 
   if (differenceHuHa >= 0) {
-    huhaResultElement.textContent = "Hùng trả Hà: " + differenceHuHa;
+    huhaResultElement.textContent =
+      "Hà trả Hùng: " + differenceHuHa/2;
   } else {
-    huhaResultElement.textContent = "Hà trả Hùng: " + Math.abs(differenceHuHa);
+    huhaResultElement.textContent = "Hùng trả Hà: " + Math.abs(differenceHuHa/2);
   }
 }
